@@ -87,7 +87,7 @@ const Hotels = () => {
               >
                 Eliminar Hotel
               </button>
-              <Link to={`/edit-hotel/${hotel.id}`} className={styles.link}>
+              <Link to={`/edit-hotel/${hotel.id}`}>
                 <button className={styles.button}>Editar Hotel</button>
               </Link>
               
@@ -107,7 +107,7 @@ const Hotels = () => {
                         >
                           Eliminar Habitación
                         </button>
-                        <Link to={`/edit-room/${room.id}`} className={styles.link}>
+                        <Link to={`/edit-room/${room.id}`} >
                           <button className={styles.button}>Editar Habitación</button>
                         </Link>
                       </li>
