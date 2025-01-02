@@ -87,12 +87,10 @@ const Hotels = () => {
               >
                 Eliminar Hotel
               </button>
-              <button
-                className={styles.button}
-                onClick={() => window.location.href = `/edit-hotel/${hotel.id}`}
-              >
-                Editar Hotel
-              </button>
+              <Link to={`/edit-hotel/${hotel.id}`} className={styles.link}>
+                <button className={styles.button}>Editar Hotel</button>
+              </Link>
+              
             </div>
 
             {selectedHotel === hotel.id && (
@@ -109,12 +107,9 @@ const Hotels = () => {
                         >
                           Eliminar Habitación
                         </button>
-                        <button
-                          className={styles.button}
-                          onClick={() => window.location.href = `/edit-room/${room.id}`}
-                        >
-                          Editar Habitación
-                        </button>
+                        <Link to={`/edit-room/${room.id}`} className={styles.link}>
+                          <button className={styles.button}>Editar Habitación</button>
+                        </Link>
                       </li>
                     ))
                   ) : (
